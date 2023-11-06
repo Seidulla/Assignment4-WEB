@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More News</title>
+    <link rel="icon" type="image/x-icon" href="fav.jpg">
+    <link rel="stylesheet" href="newStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ASS1.html">ZR Performance</a></li>
+            </ul>
+            
+            <button onclick="showAlert()">Show Alert</button>
+         <button onclick="showConfirmation()">Show Confirmation</button>
+         <button onclick="showPrompt()">Show Prompt</button>
+
+        </nav>
+    </header>
+
+   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="news.html">News</a></li>
+            <li class="breadcrumb-item active" aria-current="page">More News</li>
+        </ol>
+    </nav>
+    
+    <section class="news-article">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="content">
+                        <div class="article-content">
+                            <h1>Exciting Developments in the World of Cars</h1>
+                            <p class="publication-date">Published on: September 28, 2023</p>
+                            <div class="image-container">
+                                <img src="news1.jpg" alt="Car News Image">
+                            </div>
+                            <p class="article-text">
+                     <h2><strong>Honda, Acura Expand EV Charging Access With New Agreements</strong></h2>
+                    The most common question people often have when considering an electric vehicle is how difficult it is to recharge it when the battery is running low. Honda and its luxury brand Acura just made answering this a little bit easier with the automaker’s announcement regarding a new partnership with EVgo and Electrify America.
+                    <br><br>
+                    The HondaLink and Acura EV smartphone apps will be updated to include charging stations for both the EVgo and Electrify American nationwide networks of charging stations. Better still, this newly minted cooperation lets a Honda or Acura EV owner use their app to pay for charging, enroll in subscriptions or redeem existing credits.
+                    <br><br>
+                    Three charging packages will be available to buyers of Honda and Acura EVs, too. The first provides a $500 installation credit for a Level 2 (240-volt) home charger, a $100 EVgo charging credit and 60 kilowatt-hours of Electrify America charging credit. Next is the option of a $250 installation credit for a Level 1 or Level 2 portable charger, a $300 EVgo charging credit and 60 kWh of Electrify America charging. The third does away with any installation credit for an at-home or portable charger, but it increases the EVgo charge credit to $750 and maintains the 60-kWh Electrify America credit.
+                    <br><br>
+                    This follows recent news that future Honda and Acura EVs will adopt the North American Charging Standard, which opens the door to accessing Tesla’s extensive Supercharger network. At present, there are approximately 21,600 Supercharger stations throughout the U.S., which is far more than any other competing charging network.
+                    <br><br>
+                    Honda and Acura are also teaming with five other automakers to build a nationwide network of public charging stations. The goal is to have 30,000 charge points throughout North America with stations strategically placed in cities and along major highway corridors. Honda’s partners in this venture include BMW, GM, Hyundai-Kia, Mercedes-Benz and Stellantis.
+                    <br><br>
+                    Honda and Acura’s push toward making recharging a simpler and stress-free experience is being accelerated by the upcoming arrival of the 2024 Honda Prologue and Acura ZDX electric SUVs. Each offers a maximum range of 300 miles or more, available all-wheel drive, and they go on sale in early 2024.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="news-tabs">
+            <button class="tab-button active" onclick="showTab('tab1')">Latest News</button>
+            <div class="tab-content" id="tab1">
+                <h2>Latest Car News</h2>
+                <p>Stay updated with the most recent developments in the automotive world. From new car releases to innovative technology, our Latest Car News section keeps you informed about the latest trends and breakthroughs in the industry.</p>
+            </div>
+    
+            <button class="tab-button" onclick="showTab('tab2')">Electric Vehicles</button>
+            <div class="tab-content" id="tab2">
+                <h2>Electric Vehicles</h2>
+                <p>Discover the future of transportation with our Electric Vehicles section. Learn about the latest electric car models, charging infrastructure, and sustainability efforts in the automotive industry. Electric vehicles are reshaping the way we drive, and we've got the news to prove it.</p>
+            </div>
+    
+            <button class="tab-button" onclick="showTab('tab3')">Concept Cars</button>
+            <div class="tab-content" id="tab3">
+                <h2>Concept Cars</h2>
+                <p>Explore the cutting-edge world of concept cars, where innovation knows no bounds. In this section, we delve into the imaginative and forward-thinking concepts that push the boundaries of automotive design and technology. Concept cars offer a glimpse into the future of mobility, and it's an exciting journey we're eager to share.</p>
+            </div>
+            <hr>
+            <button id="playSoundBtn" class="btn btn-primary">Play Sound</button>
+            
+        
+        
+    <div class="quiz-container">
+        <h2>Car Brands Quiz</h2>
+        <div class="options">
+            <div class="option" draggable="true" id="option1">Tesla</div>
+            <div class="option" draggable="true" id="option2">Ford</div>
+            <div class="option" draggable="true" id="option3">Honda</div>
+        </div>
+        <div class="categories">
+            <div class="category" id="category1">Electric Car</div>
+            <div class="category" id="category2">American Car</div>
+            <div class="category" id="category3">Japanese Car</div>
+        </div>
+        <audio id="audioElement" src="sound.mp3" preload="auto"></audio> 
+    </div>
+    </div>
+    </div>
+ 
+    </section>
+    <section>
+        <div class="d-flex justify-content-center my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Car News</p>
+        
+    </footer>
+   
+    <script src="feedback.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car News</title>
+    <link rel="icon" type="image/x-icon" href="fav.jpg">
+    <link rel="stylesheet" href="newStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ASS1.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <section class="news-article">
+        <div class="container">
+            
+            <div class="content">
+                <h1 id="news-title">Exciting News in the World of Cars</h1>
+                
+                <p class="publication-date">Published on: September 27, 2023</p>
+                <div class="image-container">
+                    <a class="common-link" href="moreNews.html">
+                    
+                    <img src="news1.jpg" alt="Car News Image">
+                   
+                </div>
+                <h2><strong>Honda, Acura Expand EV Charging Access With New Agreements.</strong></h2>
+                <p class="article-text">The HondaLink and Acura EV smartphone apps will be updated to include charging stations for both the EVgo and Electrify American nationwide networks of charging stations. Better still, this newly minted cooperation lets a Honda or Acura EV owner use their app to pay for charging, enroll in subscriptions or redeem existing credits.</p>
+                <div>
+                    <canvas id="electricCarSalesChart" width="400" height="200"></canvas>
+                    </div>
+            </div>
+
+            </a>
+
+            <div class="related-news">
+                <h2>Related News</h2>
+                <div class="related-news-item">
+                    <p><strong>Pickup Truck Buying Guide: How Much Truck Do You Need?</strong></p>
+                    <img src="news2.jpg" alt="Related News 1">
+                </div>
+                <div class="related-news-item">
+                    <p><strong>How Does the United Auto Workers Union Strike Affect Shoppers?</strong></p>
+                    <img src="news3.jpg" alt="Related News 2">
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More Related News
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Related News 3</a>
+                        <a class="dropdown-item" href="#">Related News 4</a>
+                    </div>          
+            </div>
+            
+            <div id="countdown">
+                <h2>Countdown Timer</h2> 
+                <div class="timer">
+                    <div id="countdownDisplay">00:00</div>
+                    <button id="startTimer">Start</button>
+                    <button id="resetTimer">Reset</button>
+                </div>
+                <div class="duration">
+                    <label for="durationInput">Set Timer Duration (in seconds):</label>
+                    <input type="number" id="durationInput" value="60">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Car News</p>
+    </footer>
+    <script src="ScriptTwo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data (you can replace this with real data)
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const electricCarSalesData = [500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600];
+      
+        // Create a bar chart using Chart.js
+        const electricCarSalesChart = new Chart('electricCarSalesChart', {
+          type: 'bar',
+          data: {
+            labels: months,
+            datasets: [{
+              label: 'Electric Car Sales',
+              data: electricCarSalesData,
+              backgroundColor: 'rgba(75, 192, 192, 0.6)', // Bar color
+              borderColor: 'rgba(75, 192, 192, 1)', // Border color
+              borderWidth: 1,
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              }
+            }
+          }
+        });
+      </script>
+      
+</body>
+</html>
